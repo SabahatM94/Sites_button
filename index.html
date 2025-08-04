@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Button</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .glow-button {
+      padding: 16px 32px;
+      border: none;
+      background: linear-gradient(45deg, #10ffc4, #00c4ff);
+      color: white;
+      font-size: 16px;
+      font-family: 'Orbitron', sans-serif;
+      border-radius: 8px;
+      box-shadow: 0 0 20px #10ffc4;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .glow-button:hover {
+      box-shadow: 0 0 40px #00c4ff, 0 0 80px #10ffc4;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <button class="glow-button">Click Me</button>
+</body>
+</html>
